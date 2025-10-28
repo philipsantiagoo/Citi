@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+/* Fundo e corpo */
+body {
+    background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
+    color: #fff;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff4d4d;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+h2, h3 {
+    text-align: center;
+    margin-top: 10px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+h3 {
+    margin-bottom: 60px;
+}
+
+/* Blocos de filmes */
+.filme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #0d0d0d;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.15);
+    padding: 30px;
+    margin-bottom: 60px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover */
+.filme:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.3);
+}
+
+/* Capas */
+.capa-filme {
+    width: 180px;
+    height: 260px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+}
+
+/* Texto */
+.filme p {
+    line-height: 1.6;
+    text-align: justify;
+    color: #e0e0e0;
+}
+
+/* Alternar lados das imagens */
+.filme:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Botões de navegação */
+div > a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    background-color: #ff1a1a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+div > a:hover {
+    transform: translateY(-3px);
+    background-color: #ff3333;
+    box-shadow: 0 6px 16px rgba(255, 0, 0, 0.5);
+}
+
+/* Centralizar links finais */
+body > div:last-of-type {
+    text-align: center;
+    margin-top: 50px;
+}

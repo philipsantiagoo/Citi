@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+
+/* Fundo geral da página */
+body {
+    background-image: url(./assets/img/background/index.jpg); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* Container principal */
+.container {
+    background-color: #0d0d0d; 
+    color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.25); 
+    border-radius: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+
+/* Imagem de perfil */
+.perfil img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+
+/* Seção sobre mim */
+.sobre {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sobre h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ff4d4d;
+}
+
+.sobre p {
+    line-height: 1.6;
+}
+
+
+/* Seção redes sociais */
+.redes {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.redes h2 {
+    margin-bottom: 20px;
+    color: #ff4d4d;
+}
+
+.redes ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.redes li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.redes li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    filter: brightness(0.8);
+}
+
+.redes li img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.6);
+    filter: brightness(1.1);
+}
+
+
+/* Links finais */
+.links {
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    background-color: #ff1a1a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.links a:hover {
+    transform: translateY(-3px);
+    background-color: #ff3333;
+    box-shadow: 0 6px 18px rgba(255, 0, 0, 0.5);
+}
